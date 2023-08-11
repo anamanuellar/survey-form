@@ -4,16 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <h1 id="title"></h1>
-    <p id="description"></p>
+    <h1 id="title">Customer Satisfaction Survey</h1>
+    <p id="description">We'd like to invite you to take a quick survey about your experience with our company</p>
     <form id="survey-form">
-        <label for="name">Name: <input required type="text" id="name" /></label>
-        <label for="email">Email: <input required type="email" id="email" /></label>
-        <label for="phone">Phone: <input required type="number" id="phone" /></label>
-
-
+        <fieldset>
+            <label for="name-label">Name: <input required type="text" id="name" placeholder="Peter Silva"/></label>
+            <label for="email-label">Email: <input required type="email" id="email" placeholder="email@provedor.com"/></label>
+            <label for="number-label">Phone: <input required type="number" id="number" placeholder="71 123456789"/></label>
+        </fieldset>
+        <fieldset>
+            <select id="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            </select> 
+        </fieldset>
+        <fieldset>
+            <label for=""><input id="" type="radio" name="" class="" /> </label>
+            <label for=""><input id="" type="radio" name="" class="" /> </label> 
+        </fieldset> 
+        <fieldset>
+            <label for=""><input id="" type="checkbox" name="" class="" /> </label>
+            <label for=""><input id="" type="checkbox" name="" class="" /> </label> 
+            <label for=""><input id="" type="checkbox" name="" class="" /> </label>
+            <label for=""><input id="" type="checkbox" name="" class="" /> </label> 
+        </fieldset> 
+        <fieldset>
+            <label for=""><input id="" type="checkbox" name="" class="" /> </label>
+            <label for=""><input id="" type="checkbox" name="" class="" /> </label> 
+            <label for=""><input id="" type="checkbox" name="" class="" /> </label>
+            <label for=""><input id="" type="checkbox" name="" class="" /> </label> 
+            <label for="">Provide your opinion:
+                <textarea id="" name="" rows="3" cols="30" placeholder="I loved the breakfast..."></textarea>
+              </label>
+        </fieldset> 
+        <input type="submit" value="Submit" />
     </form>
 </body>
 </html>
